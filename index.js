@@ -1,3 +1,6 @@
-import { addAFish, getAllFish } from "./src/fish.js"
+import { addAFish, getAllFish, deleteAFish } from "./src/fish.js"
+import { closeclient } from "./src/connectDB.js";
 
-addAFish();
+await addAFish();
+await getAllFish();
+await deleteAFish();
